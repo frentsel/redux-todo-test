@@ -1,5 +1,3 @@
-# Redux ToDo Test Application
-
 ![preview](./intro.png)
 
 ## Demo
