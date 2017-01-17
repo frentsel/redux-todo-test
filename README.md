@@ -1,6 +1,5 @@
 # Redux ToDo Test Application
 
-# TPL is an template system in JavaScript
 ![preview](./intro.png)
 
 ## Demo
