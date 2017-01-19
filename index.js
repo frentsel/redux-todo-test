@@ -85,9 +85,11 @@ window.manager = {
 	delete: function (id) {
 		$('#input').val('');
 		store.dispatch({type: 'DELETE', id: id});
+	},
+	init: function () {
+		store.subscribe(window.manager.getAll);
+		store.dispatch({type: 'GET_ALL'});
 	}
 };
 
-store.subscribe(window.manager.getAll);
-
-store.dispatch({type: 'GET_ALL'});
+window.manager.init();
