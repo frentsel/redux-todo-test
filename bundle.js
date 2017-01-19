@@ -128,12 +128,14 @@
 		delete: function _delete(id) {
 			$('#input').val('');
 			store.dispatch({ type: 'DELETE', id: id });
+		},
+		init: function init() {
+			store.subscribe(window.manager.getAll);
+			store.dispatch({ type: 'GET_ALL' });
 		}
 	};
 
-	store.subscribe(window.manager.getAll);
-
-	store.dispatch({ type: 'GET_ALL' });
+	window.manager.init();
 
 /***/ },
 /* 1 */
