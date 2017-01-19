@@ -130,7 +130,7 @@
 			store.dispatch({ type: 'DELETE', id: id });
 		},
 		init: function init() {
-			store.subscribe(window.manager.getAll);
+			store.subscribe(this.getAll);
 			store.dispatch({ type: 'GET_ALL' });
 		}
 	};

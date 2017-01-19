@@ -87,7 +87,7 @@ window.manager = {
 		store.dispatch({type: 'DELETE', id: id});
 	},
 	init: function () {
-		store.subscribe(window.manager.getAll);
+		store.subscribe(this.getAll);
 		store.dispatch({type: 'GET_ALL'});
 	}
 };
